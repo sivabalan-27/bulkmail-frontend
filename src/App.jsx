@@ -40,7 +40,7 @@ function App() {
 
     setstatus(true);
 
-    axios.post("https://bulkmailbackend-1.onrender.com/sendemail", { msg, emailList })
+    axios.post("https://bulkmail-backend-production-dba4.up.railway.app/sendemail", { msg, emailList })
       .then((response) => {
         response.data === true
           ? alert("Email sent successfully")
